@@ -3,7 +3,7 @@ let fileData = {};
 let currentPath = [];
 
 async function loadFiles() {
-  const res = await fetch("files.json");
+  const res = await fetch("explorer.json");
   fileData = await res.json();
   renderTree(document.getElementById("tree"), fileData, []);
   openFolder([]);
@@ -112,3 +112,4 @@ function openFile(file) {
 }
 
 loadFiles();
+
