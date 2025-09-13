@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explorer Test</title>
+<link rel="stylesheet" href="explorer.css">
+<style>
+/* Styles minimalistes pour tester */
+body { margin:0; font-family:Inter,sans-serif; background:#071026; color:#e6eef8; }
+.explorer__wrap { display:grid; grid-template-columns:300px 1fr; gap:10px; height:100vh; padding:10px; }
+.explorer__sidebar { background:#0b1030; padding:10px; border-radius:10px; overflow:auto; }
+.explorer__tree-item { padding:5px; cursor:pointer; border-radius:5px; }
+.explorer__tree-children { margin-left:15px; display:none; }
+.explorer__tree-item.active { background:#3b82f6; }
+#grid { background:#041025; padding:10px; border-radius:10px; overflow:auto; height:100%; }
+.explorer__tile { padding:10px; background:#0b1030; margin-bottom:5px; border-radius:5px; cursor:pointer; }
+#popup { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); display:none; justify-content:center; align-items:center; }
+#popupBody { background:#071026; padding:10px; border-radius:10px; width:80%; height:80%; display:flex; flex-direction:column; }
+#popupBody iframe { flex:1; width:100%; border:none; }
+.popup-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:5px; }
+.popup-close { cursor:pointer; background:red; color:white; border:none; border-radius:5px; padding:2px 6px; }
+</style>
+</head>
+<body>
+<div class="explorer__wrap">
+  <div class="explorer__sidebar">
+    <div id="tree"></div>
+  </div>
+  <div class="explorer__main">
+    <div id="breadcrumb"></div>
+    <div id="grid"></div>
+  </div>
+</div>
+
+<div id="popup">
+  <div id="popupBody"></div>
+</div>
+
+<script src="explorer.js"></script>
+</body>
+</html>

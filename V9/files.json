@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Documents",
+    "type": "folder",
+    "children": [
+      { "name": "ChessBoard1", "type": "file", "url": "https://www.chess.com/emboard?id=13847611" },
+      { "name": "ChessBoard2", "type": "file", "url": "https://www.chess.com/emboard?id=13847612" }
+    ]
+  },
+  {
+    "name": "Images",
+    "type": "folder",
+    "children": [
+      { "name": "Diagram1", "type": "file", "url": "https://www.chess.com/emboard?id=13847613" }
+    ]
+  },
+  { "name": "README", "type": "file", "url": "https://www.chess.com/emboard?id=13847614" }
+]
