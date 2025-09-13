@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="explorer">
+        <div class="explorer__wrap">
+            <!-- Sidebar -->
+            <aside class="explorer__sidebar">
+            <div class="explorer__brand">
+                <div class="logo">🗂️</div>
+                <div>
+                <p class="title">Explorateur</p>
+                <p class="subtitle">Fichiers JSON</p>
+                </div>
+            </div>
+            <div class="explorer__tree" id="tree"></div>
+            </aside>
+
+            <!-- Main -->
+            <main class="explorer__main">
+            <div class="explorer__toolbar">
+                <div class="left">
+                <div class="explorer__breadcrumb" id="breadcrumb"></div>
+                </div>
+            </div>
+            <div class="explorer__grid" id="grid"></div>
+            </main>
+        </div>
+        </div>
+
+    <link rel="stylesheet" href="explorer.css">
+    <div id="explorer"></div>
+    <script src="explorer.js"></script>
+    <script>
+    initExplorer("explorer", "explorer.json");
+    </script>
+</body>
+</html>
