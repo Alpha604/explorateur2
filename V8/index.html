@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Explorateur JSON</title>
+  <link rel="stylesheet" href="explorer.css">
+</head>
+<body>
+  <div class="explorer">
+    <div class="explorer__wrap">
+      <!-- Sidebar -->
+      <aside class="explorer__sidebar">
+        <div class="explorer__brand">
+          <div class="logo">🗂️</div>
+          <div>
+            <p class="title">Explorateur</p>
+            <p class="subtitle">Fichiers JSON</p>
+          </div>
+        </div>
+        <div class="explorer__tree" id="tree"></div>
+      </aside>
+
+      <!-- Main -->
+      <main class="explorer__main">
+        <div class="explorer__toolbar">
+          <div class="explorer__breadcrumb" id="breadcrumb">Accueil</div>
+        </div>
+        <div class="explorer__grid" id="grid"></div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <div class="popup-header">
+        <span id="popup-title"></span>
+        <button id="popup-close">✖</button>
+      </div>
+      <div class="popup-body" id="popup-body"></div>
+    </div>
+  </div>
+
+  <script src="explorer.js"></script>
+  <script>
+    initExplorer("files.json");
+  </script>
+</body>
+</html>
