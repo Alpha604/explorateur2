@@ -1,0 +1,24 @@
+{
+  "type": "folder",
+  "name": "root",
+  "children": [
+    {
+      "type": "folder",
+      "name": "Échecs",
+      "children": [
+        {
+          "type": "file",
+          "name": "13847611",
+          "url": "https://www.chess.com/emboard?id=13847611"
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Docs",
+      "children": [
+        { "type": "file", "name": "CV", "url": "https://example.com/cv.pdf" }
+      ]
+    }
+  ]
+}
