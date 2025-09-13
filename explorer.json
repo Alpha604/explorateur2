@@ -1,0 +1,28 @@
+{
+  "name": "root",
+  "type": "folder",
+  "children": [
+    {
+      "name": "Échecs",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Partie Chess.com",
+          "type": "file",
+          "content": "<iframe id='13847525' allowtransparency='true' frameborder='0' style='width:100%;border:none;' src='https://www.chess.com/emboard?id=13847525'></iframe><script nonce='chesscom-diagram'>window.addEventListener('message',e=>{e['data']&&'13847525'===e['data']['id']&&document.getElementById(`${e['data']['id']}`)&&(document.getElementById(`${e['data']['id']}`).style.height=`${e['data']['frameHeight']+37}px`)})</script>"
+        }
+      ]
+    },
+    {
+      "name": "Documents",
+      "type": "folder",
+      "children": [
+        {
+          "name": "Notice.pdf",
+          "type": "file",
+          "url": "files/notice.pdf"
+        }
+      ]
+    }
+  ]
+}
