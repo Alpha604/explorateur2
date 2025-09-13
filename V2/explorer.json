@@ -1,0 +1,22 @@
+{
+  "type": "folder",
+  "name": "root",
+  "children": [
+    {
+      "type": "folder",
+      "name": "Documents",
+      "children": [
+        { "type": "file", "name": "CV.pdf", "url": "https://example.com/cv.pdf" },
+        { "type": "file", "name": "Rapport.docx", "url": "https://example.com/rapport.docx" }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Images",
+      "children": [
+        { "type": "file", "name": "photo1.jpg", "url": "https://placekitten.com/300/200", "open": "iframe" },
+        { "type": "file", "name": "photo2.jpg", "url": "https://placekitten.com/400/300" }
+      ]
+    }
+  ]
+}
